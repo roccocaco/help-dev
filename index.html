@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form id="developerForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name required"> 
+
+        <label for="developer-type">Tipo de Desenvolvedor:</label>
+        <select id="developer-type" name="developer-type" required>
+            <option value="">Selecione o tipo de desenvolvedor</option>
+            <option value="front-end">Front-End</option>
+            <option value="back-end">Back-End</option>
+            <option value="full-stack">Full-Stack</option>
+        </select>
+
+        <label for="details">Detalhes:</label>   
+        <textarea id="details" name="details" placeholder="Insira mais detalhes aqui" required></textarea> 
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    
+    <div id="resultsContainer"></div> 
+
+    <script src="script.js"></script>
+
+</body>
+</html>
